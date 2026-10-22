@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Authorization complete</title>
+<style>body{font:16px/1.6 system-ui,sans-serif;max-width:720px;margin:40px auto;padding:0 16px;color:#222}textarea{width:100%;height:120px;font:14px monospace}</style>
+</head>
+<body>
+<h1>Authorization complete</h1>
+<p>Copy this whole URL and paste it into the terminal that is waiting for it:</p>
+<textarea id="u" readonly></textarea>
+<script>
+const box = document.getElementById("u");
+box.value = window.location.href;
+box.focus();
+box.select();
+</script>
+</body>
+</html>
